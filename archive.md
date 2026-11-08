@@ -1,4 +1,5 @@
 ---
 layout: archive
-title: Archive
+title: Writings
+permalink: /writings/
 ---
