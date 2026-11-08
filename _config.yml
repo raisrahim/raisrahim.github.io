@@ -4,9 +4,10 @@ email: rais.gowa@gmail.com
 url: "https://raisrahim.com"
 #github_username: raisrahim
 #linkedin_username: raisrahim
-baseurl: "/no-style-please" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
-description: > # description of the site (multiple lines allowed)
-  A (nearly) no-CSS, fast, minimalist Jekyll theme.
+baseurl: "" # the site is served from the domain root
+description: >-
+  Muhammad Rais Rahim is a software architect and engineering leader with 15+ years
+  of experience designing distributed systems, cloud architectures, and enterprise software.
 
 permalink: /:slug.html
 
@@ -28,6 +29,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jektex
 
 jektex:

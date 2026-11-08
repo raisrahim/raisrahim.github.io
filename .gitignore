@@ -3,6 +3,7 @@
 *.css.map
 .bundle
 .jekyll-cache
+.jektex-cache
 .sass-cache
 _site
 vendor
