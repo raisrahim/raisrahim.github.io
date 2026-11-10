@@ -16,12 +16,6 @@ Previously, I orchestrated the transition to high-concurrency microservices at B
 
 This site serves as my digital archive and professional portfolio. Here, you will find my writing on software engineering and technology, alongside a curated selection of projects. I share my work here hoping it might be useful to others and spark new collaborations.
 
-## Explore
-
-- [Writings](/writings/) — articles and an archive of things I publish.
-- [Projects](/projects.html) — selected portfolio work.
-- [About](/about.html) — my professional background and areas of focus.
-
 ---
 
 [LinkedIn](https://www.linkedin.com/in/raisrahim) · [GitHub](https://github.com/raisrahim) · [Email](mailto:rais.gowa@gmail.com)
