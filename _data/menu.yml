@@ -1,9 +1,8 @@
 entries:
-  - title: writings
+  - title: About
+    url: /
+  - title: Writing
     url: /writings/
-  - title: projects
-    url: projects.html
-  - title: about
-    url: about.html
-  - title: rss
-    url: feed.xml
+  - title: Misc
+    url: /projects.html
+    active_url: /projects

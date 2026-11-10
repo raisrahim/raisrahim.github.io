@@ -2,11 +2,32 @@
 <html lang="{{ page.lang | default: "en" }}">
   {%- include head.html -%}
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        {{ content }}
-      </div>
-    </main>
+    <div class="site-layout">
+      <aside class="site-sidebar">
+        <a class="site-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <nav aria-label="Main navigation">
+          <ul class="site-menu">
+            {%- for item in site.data.menu.entries %}
+              {%- assign item_url = item.active_url | default: item.url | remove_first: "/" %}
+              {%- assign current_url = page.url | remove_first: "/" %}
+              <li>
+                {%- if item_url == current_url %}
+                  <a href="{{ item.url | relative_url }}" aria-current="page">{{ item.title }}</a>
+                {%- else %}
+                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {%- endif %}
+              </li>
+            {%- endfor %}
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="page-content" aria-label="Content">
+        <div class="w">
+          {{ content }}
+        </div>
+      </main>
+    </div>
 
     {%-if site.goat_counter and jekyll.environment == "production"-%}
       {%-include goat_counter.html-%}

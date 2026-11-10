@@ -51,8 +51,63 @@ li { margin: 0.4rem 0; }
 
 .w {
   max-width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-layout {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 40rem);
+  gap: 3rem;
+  max-width: 64rem;
   margin: 0 auto;
   padding: 4rem 2rem;
+}
+
+.site-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 4rem;
+}
+
+.site-brand {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.site-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 48rem) {
+  .site-layout {
+    display: block;
+    padding: 2rem 1.25rem;
+  }
+
+  .site-sidebar {
+    margin-bottom: 3rem;
+    position: static;
+  }
+
+  .site-brand {
+    margin-bottom: 1rem;
+  }
+
+  .site-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+  }
 }
 
 hr {
