@@ -4,7 +4,9 @@
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <div class="site-layout">
       <aside class="site-sidebar">
-        <a class="site-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <a class="site-brand" href="{{ "/" | relative_url }}">
+          <img src="{{ site.favicon | relative_url }}" alt="{{ site.title }}" />
+        </a>
         <nav aria-label="Main navigation">
           <ul class="site-menu">
             {%- for item in site.data.menu.entries %}
@@ -24,7 +26,24 @@
 
       <main class="page-content" aria-label="Content">
         <div class="w">
+          <header class="site-header">
+            <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+          </header>
+
           {{ content }}
+
+          <footer class="site-footer">
+            <p>
+              © 2026 {{ site.author }}.
+              <span class="site-footer-links">
+                <a href="https://www.linkedin.com/in/raisrahim">LinkedIn</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://github.com/raisrahim">GitHub</a>
+                <span aria-hidden="true">·</span>
+                <a href="mailto:rais.gowa@gmail.com">Email</a>
+              </span>
+            </p>
+          </footer>
         </div>
       </main>
     </div>
