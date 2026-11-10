@@ -2,7 +2,7 @@ entries:
   - title: About
     url: /
   - title: Writing
-    url: /writings/
+    url: /writing/
   - title: Misc
     url: /projects.html
     active_url: /projects
