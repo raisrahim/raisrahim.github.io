@@ -6,7 +6,7 @@ This repository is Muhammad Rais Rahim's personal portfolio and writing site, pu
 
 ## Where to make changes
 
-- Root Markdown files (`index.md`, `about.md`, `projects.md`, `archive.md`) are site pages; articles live in `_posts/`.
+- Root Markdown files (`index.md`, `projects.md`, `archive.md`) are site pages; the homepage also serves as the About page, and articles live in `_posts/`.
 - `_data/menu.yml` defines the navigation. `_config.yml` controls site metadata, theme settings, plugins, and permalink behavior.
 - `_layouts/` and `_includes/` contain local theme overrides. Check them before changing presentation; the rest of the theme comes from the remote theme.
 - `assets/css/main.scss` imports the theme stylesheet. Put authored styles in the existing Sass/CSS structure and scripts in `assets/js/`.
