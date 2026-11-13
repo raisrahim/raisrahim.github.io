@@ -12,4 +12,4 @@ Over 15+ years, I've designed and built enterprise software across banking, insu
 
 I engineered open-source projects for Hyundai Motor Group, including [hmg-Role](https://github.com/hyundaimotorgroup/hmg-role), a hybrid RBAC and ABAC authorization framework, and [hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap), a geolocation data pipeline.
 
-Previously, I led the transition to high-concurrency microservices at Bank Muamalat and designed a Risk Management System at Hijra Group. My career has also included airport management systems and global data synchronization.
+Previously, I led the transition to high-concurrency microservices at [Bank Muamalat](https://www.bankmuamalat.co.id/) and designed a Risk Management System at [Alami Syariah](https://alamisharia.co.id/). My career has also included airport management systems and global data synchronization.
