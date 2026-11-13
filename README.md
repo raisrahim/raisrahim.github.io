@@ -32,7 +32,7 @@ The generated site is written to `_site/`; make changes to the source files, not
 - `_layouts/`, `_includes/` — local overrides for the remote theme
 - `assets/` and `_sass/` — site-specific styles and scripts
 
-Posts and pages use Jekyll front matter for layouts, titles, dates, and descriptions. The site uses the Jekyll Feed, SEO Tag, Sitemap, and Jektex plugins.
+Posts and pages use Jekyll front matter for layouts, titles, dates, and descriptions. The site uses the Jekyll Feed, Sitemap, and Jektex plugins. SEO metadata is rendered in the local head include.
 
 ## Deployment
 
