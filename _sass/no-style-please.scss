@@ -110,16 +110,11 @@ a {
 .site-brand {
   display: inline-block;
   margin-bottom: 2rem;
-  border-radius: 999px;
-  box-shadow: 0 8px 18px var(--shadow);
 
   img {
     height: auto;
     margin: 0;
     width: 3rem;
-    border-radius: 999px;
-    background: var(--accent);
-    padding: 0.25rem;
     display: block;
   }
 }
