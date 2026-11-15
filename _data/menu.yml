@@ -8,3 +8,4 @@ entries:
     active_url: /projects
   - title: Resume
     url: /resume.html
+    active_url: /resume
