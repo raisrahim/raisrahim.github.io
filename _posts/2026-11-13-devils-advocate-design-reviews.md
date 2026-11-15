@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Stress-Testing Architecture: Why We Use a Devil’s Advocate in Design Reviews"
+title: "The Devil’s Advocate in Design Reviews"
 description: "How giving engineers explicit permission to challenge design decisions helps prevent groupthink and catches production bugs early."
-tags: ["software-engineering", "system-design", "leadership", "code-review"]
+tags: ["software-engineering", "system-design",  "leadership", "team-collaboration", "architecture"]
 ---
 
 In many engineering teams, discussions often end with polite silence. A developer shares an architecture diagram during grooming, asks if anyone has feedback, and gets a room full of nods or quick "LGTM" comments.
