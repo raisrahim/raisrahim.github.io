@@ -143,6 +143,13 @@ a {
   }
 }
 
+.page-body a[href^="https://"]::after,
+.page-body a[href^="http://"]::after {
+  content: " ↗";
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
 .w {
   max-width: 640px;
   margin: 0;
