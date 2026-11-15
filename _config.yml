@@ -1,9 +1,9 @@
 title: RaisRahim.com
 author: Muhammad Rais Rahim
-email: rais.gowa@gmail.com
 url: "https://raisrahim.com"
-#github_username: raisrahim
-#linkedin_username: raisrahim
+email: rais.gowa@gmail.com
+github_username: raisrahim
+linkedin_username: raisrahim
 baseurl: "" # the site is served from the domain root
 description: >-
   Muhammad Rais Rahim is a software architect and engineering leader with 15+ years
