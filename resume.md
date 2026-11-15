@@ -5,7 +5,7 @@ display_title: Resume
 description: View or download the professional resume of Muhammad Rais Rahim.
 ---
 
-My resume is maintained in Google Docs. View it below, [open it in Google Docs](https://docs.google.com/document/d/128lQFQKccZMMJ2TIbooOoxDudEGVhr_B2bw4md4NyWk/edit?usp=sharing), or [download a PDF](https://docs.google.com/document/d/128lQFQKccZMMJ2TIbooOoxDudEGVhr_B2bw4md4NyWk/export?format=pdf).
+View my resume below, or [open it in Google Docs](https://docs.google.com/document/d/128lQFQKccZMMJ2TIbooOoxDudEGVhr_B2bw4md4NyWk/edit?usp=sharing) or [download a PDF](https://docs.google.com/document/d/128lQFQKccZMMJ2TIbooOoxDudEGVhr_B2bw4md4NyWk/export?format=pdf).
 
 <iframe
   src="https://docs.google.com/document/d/128lQFQKccZMMJ2TIbooOoxDudEGVhr_B2bw4md4NyWk/preview"
