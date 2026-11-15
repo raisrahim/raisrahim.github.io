@@ -74,7 +74,10 @@ body {
 
 .page-title { margin-top: 0.25rem; }
 
-.post-title { margin: 0.25rem 0 0; }
+.post-title {
+  line-height: 1.1;
+  margin: 0.25rem 0 0;
+}
 
 .post-meta {
   color: var(--muted);
@@ -114,6 +117,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--accent-strong);
   margin-top: 3rem;
+  line-height: 1.1;
 }
 
 
