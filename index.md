@@ -1,15 +1,14 @@
 ---
 layout: home
-title: "About Muhammad Rais Rahim | Software Architect"
+title: "Muhammad Rais Rahim | Principal Systems Architect & Builder"
 description: >-
-  About Muhammad Rais Rahim, a software architect and engineering leader with 15+ years
-  of experience in enterprise software and distributed systems.
+  About Muhammad Rais Rahim, a hands-on systems architect, principal software engineer, and engineering leader with 15+ years of experience building distributed systems.
 ---
 
-I'm a software architect and engineering leader living in Jakarta, Indonesia. I lead the Global Development Center at Hyundai AutoEver Indonesia, where I work on enterprise platforms multi-region across APAC, Europe, and North America.
+I'm a systems architect and hands-on engineer living in Jakarta, Indonesia. Currently, I lead the Global Development Center at Hyundai AutoEver Indonesia, where I split my time between core systems implementation, multi-region architecture (APAC, EU, NA), and growing high-velocity engineering teams.
 
-Over 15+ years, I've designed and built enterprise software across banking, insurance, fintech, and airport management. My work includes distributed systems, cloud architecture, authorization, and data pipelines. At Hyundai AutoEver Indonesia, I also grew the software development team from 0 to 20+ engineers.
+Over 15+ years, I’ve designed, built, and shipped software across banking, fintech, insurance, and airport management. My engineering focus centers on distributed backend runtimes, local-first authorization engines, and sub-millisecond data pipelines. Alongside hands-on code delivery, I scaled our Indonesia engineering organization from 0 to 20+ developers.
 
-I architected and led the engineering of Hyundai Motor Group’s first two open-source enterprise projects: [hmg-Role](https://github.com/hyundaimotorgroup/hmg-role), a hybrid RBAC and ABAC authorization framework, and [hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap), a low-latency geolocation data pipeline.
+I architected, wrote, and open-sourced Hyundai Motor Group’s first two enterprise projects: [hmg-Role](https://github.com/hyundaimotorgroup/hmg-role), an embedded hybrid RBAC/ABAC authorization framework, and [hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap), a low-latency geolocation pipeline backed by Valkey.
 
-Previously, I led the transition to high-concurrency microservices at [Muamalat Bank](https://www.bankmuamalat.co.id/) and designed a Risk Management System at [Alami Sharia](https://alamisharia.co.id/). My career has also included airport management systems and global data synchronization.
+Previously, I engineered the microservices core for [Muamalat Bank](https://www.bankmuamalat.co.id/) and designed the modular Risk Management System at [Alami Sharia / Hijra Group](https://alamisharia.co.id/). I build software, design systems, and lead teams.
