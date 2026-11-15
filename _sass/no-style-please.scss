@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-strong);
 }
 
+.page-title + h2 {
+  margin-top: 1rem;
+}
+
 .w > h1 {
   margin-top: 0.25rem;
 }
@@ -175,13 +179,13 @@ a {
 
   .site-title-name {
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 900;
     letter-spacing: -0.06em;
   }
 
   .site-title-domain {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 400;
   }
 }
