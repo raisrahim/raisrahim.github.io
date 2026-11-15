@@ -55,6 +55,14 @@ body {
   background: var(--accent-soft);
 }
 
+.post-header {
+  background: var(--bg);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .post-title { margin: 0.25rem 0 0; }
 
 .post-meta {
