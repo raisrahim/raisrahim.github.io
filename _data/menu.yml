@@ -6,3 +6,5 @@ entries:
   - title: Projects
     url: /projects.html
     active_url: /projects
+  - title: Resume
+    url: /resume.html
