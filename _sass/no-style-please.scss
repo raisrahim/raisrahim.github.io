@@ -57,6 +57,34 @@ body {
 
 .post-meta { text-align: right; }
 
+.post-list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.post-list-item {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.post-list-title {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.post-list-date {
+  color: var(--muted);
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text);
   margin-top: 3rem;
