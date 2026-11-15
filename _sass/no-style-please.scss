@@ -93,13 +93,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
+  color: var(--accent-strong);
   margin-top: 3rem;
 }
 
-.page-title {
-  color: var(--accent-strong);
-}
 
 .page-title + h2 {
   margin-top: 1rem;
