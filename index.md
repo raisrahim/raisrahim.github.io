@@ -2,13 +2,11 @@
 layout: home
 title: "Rais Rahim | Engineering Leader & Principal Systems Architect"
 description: >-
-  About Muhammad Rais Rahim, an engineering leader and principal systems architect with 15+ years of experience building enterprise systems and scaling engineering teams.
-custom_js:
-  - experience-years
+  About Muhammad Rais Rahim, an engineering leader and principal systems architect with EXPERIENCE_YEARS+ years of experience building enterprise systems and scaling engineering teams.
 ---
 I am a hands-on engineering leader and systems architect living in Jakarta, Indonesia. Currently, I lead the Global Development Center at Hyundai AutoEver Indonesia, where I split my time between system design of multi-region architecture (APAC, EU, NA), and growing high-velocity engineering teams.
 
-Over <span id="experience-years">15</span> years, I’ve designed, built, and shipped software across banking, fintech, insurance, and airport management. My technical focus centers on maintainability, performance, and operational resilience. Alongside hands-on engineering, I grow organizations by scaling teams both broadly and structurally through hiring, mentorship, and engineering team management.
+Over {{ site.experience_years }} years, I’ve designed, built, and shipped software across banking, fintech, insurance, and airport management. My technical focus centers on maintainability, performance, and operational resilience. Alongside hands-on engineering, I grow organizations by scaling teams both broadly and structurally through hiring, mentorship, and engineering team management.
 
 I architected and implemented Hyundai Motor Group’s first two open-source enterprise systems: [hmg-Role](https://github.com/hyundaimotorgroup/hmg-role), an embedded hybrid RBAC/ABAC authorization framework, and [hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap), a low-latency geolocation pipeline backed by Valkey.
 

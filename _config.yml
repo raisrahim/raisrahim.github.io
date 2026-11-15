@@ -5,8 +5,9 @@ email: rais.gowa@gmail.com
 github_username: raisrahim
 linkedin_username: raisrahim
 baseurl: "" # the site is served from the domain root
+experience_years: 15
 description: >-
-  Muhammad Rais Rahim is a software architect and engineering leader with 15+ years
+  Muhammad Rais Rahim is a software architect and engineering leader with EXPERIENCE_YEARS+ years
   of experience designing distributed systems, cloud architectures, and enterprise software.
 
 permalink: /:slug.html
