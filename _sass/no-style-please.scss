@@ -55,7 +55,14 @@ body {
   background: var(--accent-soft);
 }
 
-.post-meta { text-align: right; }
+.post-title { margin: 0.25rem 0 0; }
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0.25rem 0 2rem;
+  text-align: right;
+}
 
 .post-list {
   list-style: none;
