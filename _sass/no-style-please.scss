@@ -55,11 +55,20 @@ body {
   background: var(--accent-soft);
 }
 
-.post-header {
+.site-header {
   background: var(--bg);
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
+  z-index: 2;
+}
+
+.post-header,
+.page-title {
+  background: var(--bg);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 3.5rem;
   z-index: 1;
 }
 
