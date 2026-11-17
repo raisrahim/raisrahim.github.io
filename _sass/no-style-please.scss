@@ -58,17 +58,17 @@ body {
 .post-header,
 .page-title {
   background: var(--bg);
-  padding: 0.5rem 0;
+  padding: 0 0 0.5rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
-.page-title { margin-top: 0.25rem; }
+.page-title { margin-top: 0; }
 
 .post-title {
   line-height: 1.1;
-  margin: 0.25rem 0 0;
+  margin: 0;
 }
 
 .post-meta {
@@ -166,7 +166,7 @@ a {
 .site-sidebar {
   align-self: start;
   position: sticky;
-  top: 4rem;
+  top: 0;
 }
 
 .site-brand-heading {
@@ -290,13 +290,13 @@ a {
 
   .post-header,
   .page-title {
-    top: var(--mobile-sidebar-height, 0px);
+    top: 8.75rem;
   }
 
   .site-menu {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 1.5rem;
+    flex-wrap: nowrap;
+    gap: 0.25rem 0.5rem;
   }
 }
 
