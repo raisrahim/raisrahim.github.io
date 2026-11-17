@@ -55,16 +55,6 @@ body {
   background: var(--accent-soft);
 }
 
-.site-header {
-  box-sizing: border-box;
-  background: var(--bg);
-  height: var(--site-header-height);
-  padding: 0.5rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
 .post-header,
 .page-title {
   background: var(--bg);
@@ -296,6 +286,11 @@ a {
     position: sticky;
     top: 0;
     z-index: 3;
+  }
+
+  .post-header,
+  .page-title {
+    top: var(--mobile-sidebar-height, 0px);
   }
 
   .site-menu {
