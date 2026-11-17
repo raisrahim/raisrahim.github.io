@@ -4,9 +4,12 @@
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <div class="site-layout">
       <aside class="site-sidebar">
-        <a class="site-brand" href="{{ "/" | relative_url }}">
-          <img src="{{ site.favicon | relative_url }}" alt="{{ site.title }}" />
-        </a>
+        <h1 class="site-brand-heading">
+          <a class="site-brand" href="{{ "/" | relative_url }}">
+            <img src="{{ site.favicon | relative_url }}" alt="" />
+            <span class="site-brand-title"><strong class="site-title-name">{{ site.title | remove: ".com" }}</strong><span class="site-title-domain">.com</span></span>
+          </a>
+        </h1>
         <nav aria-label="Main navigation">
           <ul class="site-menu">
             {%- for item in site.data.menu.entries %}
@@ -43,14 +46,6 @@
 
       <main class="page-content" aria-label="Content">
         <div class="w">
-          <header class="site-header">
-            <h1>
-              <a href="{{ "/" | relative_url }}">
-                <strong class="site-title-name">{{ site.title | remove: ".com" }}</strong><span class="site-title-domain">.com</span>
-              </a>
-            </h1>
-          </header>
-
           <div class="page-body">
             {{ content }}
           </div>

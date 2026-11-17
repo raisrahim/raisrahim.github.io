@@ -21,7 +21,6 @@ body[a="dark"] { @include dark-appearance; }
 // -------------------------------------------- //
 
 :root {
-  --site-header-height: 2.65rem;
   --bg: #ffffff;
   --bg-strong: #e9e4d9;
   --panel: #f9f6f1;
@@ -71,7 +70,7 @@ body {
   background: var(--bg);
   padding: 0.5rem 0;
   position: sticky;
-  top: var(--site-header-height);
+  top: 0;
   z-index: 1;
 }
 
@@ -180,42 +179,41 @@ a {
   top: 4rem;
 }
 
-.site-brand {
-  display: inline-block;
-  margin-bottom: 1rem;
-
-  img {
-    height: auto;
-    margin: 0;
-    width: 3rem;
-    display: block;
-  }
+.site-brand-heading {
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
 }
 
-.site-header {
-  margin-bottom: 1.5rem;
+.site-brand {
+  align-items: center;
+  color: var(--accent-strong);
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
 
-  h1 {
-    font-size: 1.5rem;
-    letter-spacing: -0.04em;
+  img {
+    display: block;
+    flex-shrink: 0;
+    height: auto;
     margin: 0;
-    font-weight: 700;
+    width: 2.5rem;
   }
 
-  a {
-    color: var(--accent-strong);
-    text-decoration: none;
+  .site-brand-title {
+    letter-spacing: -0.04em;
+    white-space: nowrap;
   }
 
   .site-title-name {
     font-family: sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 900;
     letter-spacing: -0.06em;
   }
 
   .site-title-domain {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 }
@@ -292,16 +290,12 @@ a {
   }
 
   .site-sidebar {
-    margin-bottom: 3rem;
-    position: static;
-  }
-
-  .site-brand {
-    margin-bottom: 1rem;
-  }
-
-  .site-header {
-    margin-bottom: 1.5rem;
+    background: var(--bg);
+    margin: 0 -1.25rem 1.5rem;
+    padding: 0 1.25rem 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
   }
 
   .site-menu {
