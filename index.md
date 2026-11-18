@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "Rais Rahim | Engineering Leader & Principal Systems Architect"
+display_title: Muhammad Rais Rahim
 description: >-
   About Muhammad Rais Rahim, an engineering leader and principal systems architect with EXPERIENCE_YEARS+ years of experience building enterprise systems and scaling engineering teams.
 ---
