@@ -2,6 +2,7 @@
 *.css
 *.css.map
 .bundle
+.jekyll-metadata
 .jekyll-cache
 .jektex-cache
 .sass-cache
