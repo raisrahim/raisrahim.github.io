@@ -19,6 +19,10 @@ This repository is Muhammad Rais Rahim's personal portfolio and writing site, pu
 - Keep the minimal, content-first theme. Prefer Markdown and existing layouts over custom HTML, CSS, or JavaScript; add custom code only when the existing structure cannot meet the need.
 - Preserve the root-domain setup (`baseurl: ""`) and configured permalink conventions. Use Jekyll-aware paths where appropriate so links and assets work in GitHub Pages builds.
 
+## Commit messages
+
+- Use Conventional Commits: `<type>[optional scope]: <description>` (for example, `feat: add active menu indicator`).
+
 ## Build and verification
 
 - Install dependencies with `bundle install` if needed.

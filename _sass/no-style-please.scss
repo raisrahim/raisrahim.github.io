@@ -265,6 +265,17 @@ a {
     margin: 0.35rem 0;
   }
 
+  li.is-active {
+    position: relative;
+  }
+
+  li.is-active::before {
+    color: var(--accent);
+    content: "•";
+    left: -0.75rem;
+    position: absolute;
+  }
+
   a {
     color: var(--muted);
     text-decoration: none;
@@ -302,6 +313,17 @@ a {
     display: flex;
     flex-wrap: nowrap;
     gap: 0.25rem 0.5rem;
+
+    li.is-active::before {
+      background: var(--accent);
+      border-radius: 50%;
+      content: "";
+      height: 0.3rem;
+      left: 50%;
+      top: calc(100% + 0.1rem);
+      transform: translateX(-50%);
+      width: 0.3rem;
+    }
   }
 }
 

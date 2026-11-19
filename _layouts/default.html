@@ -19,7 +19,7 @@
               {%- if item_url == current_url or page.date and item.url == "/writing/" %}
                 {%- assign item_is_active = true %}
               {%- endif %}
-              <li>
+              <li{% if item_is_active %} class="is-active"{% endif %}>
                 {%- if item_is_active %}
                   <a href="{{ item.url | relative_url }}" aria-current="page">{{ item.title }}</a>
                 {%- else %}
