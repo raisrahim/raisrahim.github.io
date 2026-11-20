@@ -13,6 +13,6 @@ Hands-on engineer with {{ site.experience_years }}+ years building low-latency, 
 
 I architected and wrote Hyundai Motor Group’s first two open-source systems:
 - **[hmg-Role](https://github.com/hyundaimotorgroup/hmg-role)** — Local-first hybrid RBAC/ABAC authorization engine.
-- **[hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap)** — Sub-millisecond IP geolocation pipeline (Valkey, Outbox pattern).
+- **[hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap)** — Sub-millisecond IP geolocation pipeline (Valkey, Outbox).
 
 I also lead Hyundai AutoEver Indonesia’s Global Development Center (0 to 20+ engineers). Previously: microservices at [Bank Muamalat](https://www.bankmuamalat.co.id/) and the risk engine at [Alami Sharia](https://alamisharia.co.id/).
