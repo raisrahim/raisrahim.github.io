@@ -66,6 +66,15 @@ body {
 
 .page-title { margin-top: 0; }
 
+.home-title { margin-bottom: 0.25rem; }
+
+.home-intro { margin-top: 0.5rem; }
+
+.home-location {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .post-title {
   line-height: 1.1;
   margin: 0;
