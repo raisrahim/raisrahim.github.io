@@ -8,12 +8,12 @@ description: >-
 ---
 
 <p class="home-intro"><strong>Principal Software Engineer &amp; Systems Architect</strong><br>
-<span class="home-location">Jakarta, Indonesia · Remote-friendly · Global async (APAC, EU, NA)</span></p>
+<span class="home-location">Jakarta, Indonesia · Remote · APAC, EU &amp; NA</span></p>
 
-Hands-on engineer with {{ site.experience_years }}+ years building low-latency, fault-tolerant backend systems in **Java (Spring), Kafka, PostgreSQL, Valkey, and Kubernetes**.
+{{ site.experience_years }}+ years building low-latency, fault-tolerant backend systems with **Java (Spring), Kafka, PostgreSQL, Valkey, and Kubernetes**.
 
 I architected and wrote Hyundai Motor Group’s first two open-source systems:
-- **[hmg-Role](https://github.com/hyundaimotorgroup/hmg-role)** — Local-first hybrid RBAC/ABAC authorization engine.
-- **[hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap)** — Sub-millisecond IP geolocation pipeline (Valkey, Outbox).
+- **[hmg-Role](https://github.com/hyundaimotorgroup/hmg-role)** — Local-first hybrid RBAC/ABAC authorization.
+- **[hmg-IPMap](https://github.com/hyundaimotorgroup/hmg-ipmap)** — Sub-ms IP geolocation pipeline.
 
-I also built and lead Hyundai AutoEver Indonesia’s Global Development Center, growing the team from 0 to 20+ engineers. Previously: initiated microservices at [Bank Muamalat](https://www.bankmuamalat.co.id/) and the risk engine at [Alami Sharia](https://alamisharia.co.id/).
+I built and lead Hyundai AutoEver Indonesia’s Global Development Center, growing its team from 0 to 20+ engineers. Earlier, I initiated microservices at [Bank Muamalat](https://www.bankmuamalat.co.id/) and the risk engine at [Alami Sharia](https://alamisharia.co.id/).
