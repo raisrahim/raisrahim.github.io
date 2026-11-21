@@ -2,6 +2,7 @@
 layout: home
 title: "Muhammad Rais Rahim | Principal Software Engineer & Architect"
 display_title: Muhammad Rais Rahim
+permalink: /
 description: >-
   Principal Software Engineer & Systems Architect with 15+ years building low-latency distributed systems, Java/Kafka backends, and open-source enterprise tools.
 ---

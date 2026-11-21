@@ -23,9 +23,10 @@ The generated site is written to `_site/`; make changes to the source files, not
 
 ## Project structure
 
-- `index.md` — homepage and About page
-- `projects.md` — selected projects
-- `writing.md` — writing archive at `/writing/`
+- `pages/index.md` — homepage and About page at `/`
+- `pages/projects.md` — selected projects at `/projects.html`
+- `pages/resume.md` — professional resume at `/resume.html`
+- `pages/writing.md` — writing archive at `/writing/`
 - `_posts/` — articles; use Jekyll post filenames such as `YYYY-MM-DD-title.md`
 - `_data/menu.yml` — site navigation
 - `_config.yml` — site metadata, theme settings, plugins, and permalink configuration

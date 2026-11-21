@@ -2,6 +2,7 @@
 layout: page
 title: "Projects | Muhammad Rais Rahim"
 display_title: Projects
+permalink: /projects.html
 description: >-
   Selected open-source software and enterprise architecture systems by Muhammad Rais Rahim across enterprise platforms, banking, fintech, insurance, and airport management.
 ---

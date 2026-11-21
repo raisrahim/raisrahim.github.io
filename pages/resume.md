@@ -2,6 +2,7 @@
 layout: page
 title: "Professional Resume | Muhammad Rais Rahim"
 display_title: Resume
+permalink: /resume.html
 description: View or download the professional resume of Muhammad Rais Rahim.
 ---
 
