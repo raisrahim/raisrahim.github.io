@@ -8,7 +8,7 @@ description: >-
 ---
 
 <p class="home-intro"><strong>Principal Software Engineer &amp; Systems Architect</strong><br>
-<span class="home-location">Jakarta, Indonesia · Remote · APAC &amp; EMEA</span></p>
+<span class="home-location">Jakarta, Indonesia · Remote · APAC, EU, Middle East</span></p>
 
 {{ site.experience_years }}+ years building low-latency, fault-tolerant backend systems with **Java (Spring), Kafka, PostgreSQL, Valkey, and Kubernetes**.
 
