@@ -3,6 +3,66 @@
 
 @import "no-style-please";
 
+.page-description {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0.35rem 0 0;
+}
+
+.standalone-page h2 {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.standalone-page h3 {
+  margin: 1.15rem 0 0;
+}
+
+.standalone-page h3 + p {
+  margin: 0 0 0.5rem;
+}
+
+.standalone-page h3 + p em {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.resume-name {
+  font-size: 1.6rem;
+  margin: 0.5rem 0 0;
+}
+
+.resume-download,
+.resume-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  margin-top: 0.35rem;
+
+  a {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.35rem;
+  }
+
+  svg {
+    fill: currentColor;
+    flex-shrink: 0;
+    height: 1.05rem;
+    width: 1.05rem;
+  }
+}
+
+.page-body .resume-contact a[href^="https://"]::after,
+.page-body .resume-contact a[href^="http://"]::after {
+  content: none;
+}
+
 .resume-embed {
   position: relative;
   max-width: 100%;
@@ -52,5 +112,67 @@
 @media (prefers-reduced-motion: reduce) {
   .resume-loading-spinner {
     animation: none;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.6in;
+  }
+
+  .page-title:has(~ .resume-name),
+  .page-body > p:has(.resume-download) {
+    display: none;
+  }
+
+  .page-body > p:has(.resume-download) + hr {
+    display: none;
+  }
+
+  body[a="dark"],
+  body[a="auto"] {
+    background: #fff;
+    color: #000;
+    filter: none;
+  }
+
+  body[a="dark"] img,
+  body[a="auto"] img {
+    filter: none;
+  }
+
+  .site-layout {
+    display: block;
+    max-width: none;
+    padding: 0;
+  }
+
+  .site-sidebar,
+  .site-footer {
+    display: none;
+  }
+
+  .w {
+    max-width: none;
+    width: 100%;
+  }
+
+  .page-title {
+    background: transparent;
+    position: static;
+  }
+
+  .page-body a[href^="https://"]::after,
+  .page-body a[href^="http://"]::after {
+    content: none;
+  }
+
+  .page-body h2,
+  .page-body h3 {
+    break-after: avoid;
+  }
+
+  .page-body li {
+    break-inside: avoid;
   }
 }

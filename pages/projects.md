@@ -7,7 +7,7 @@ description: >-
   Selected open-source software and enterprise architecture systems by Muhammad Rais Rahim across enterprise platforms, banking, fintech, insurance, and airport management.
 ---
 
-A selection of open-source tools and closed-source enterprise systems I have architected and delivered over {{ site.experience_years }} years across distributed environments.
+<p class="page-description">Open-source projects and closed-source enterprise systems across mission-critical platforms and industries.</p>
 
 ---
 

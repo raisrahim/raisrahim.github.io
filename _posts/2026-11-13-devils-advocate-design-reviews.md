@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Devil’s Advocate in Design Reviews"
-description: "How giving engineers explicit permission to challenge design decisions helps prevent groupthink and catches production bugs early."
+description: "Giving engineers explicit permission to challenge designs stops groupthink before production."
 tags: ["software-engineering", "system-design",  "leadership", "team-collaboration", "architecture"]
 ---
 

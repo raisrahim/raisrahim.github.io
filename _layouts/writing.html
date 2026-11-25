@@ -4,4 +4,8 @@ layout: default
 
 <h1 class="page-title">{{ page.display_title | default: page.title }}</h1>
 
+{%- if page.archive_subtitle -%}
+  <p class="archive-subtitle page-description">{{ page.archive_subtitle }} Subscribe via <a href="{{ "/feed.xml" | relative_url }}">RSS</a>.</p>
+{%- endif -%}
+
 {%-include post_list.html category=page.which_category-%}

@@ -5,7 +5,7 @@ entries:
     url: /writing/
   - title: Projects
     url: /projects.html
-    active_url: /projects
+    active_url: /projects.html
   - title: Resume
     url: /resume.html
-    active_url: /resume
+    active_url: /resume.html

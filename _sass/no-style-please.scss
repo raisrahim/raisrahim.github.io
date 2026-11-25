@@ -66,6 +66,18 @@ body {
 
 .page-title { margin-top: 0; }
 
+.archive-subtitle {
+  border-bottom: 1px dotted var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.35rem 0 0;
+  padding-bottom: 0.75rem;
+}
+
+.archive-subtitle + .post-list {
+  margin-top: 0.75rem;
+}
+
 .home-title { margin-bottom: 0.25rem; }
 
 .home-intro { margin-top: 0.5rem; }
@@ -75,16 +87,32 @@ body {
   font-size: 0.9rem;
 }
 
+.page-body p {
+  margin: 0.65rem 0;
+}
+
+.page-body li {
+  margin: 0.2rem 0;
+}
+
+.site-layout .site-footer {
+  margin-top: 0.75rem;
+}
+
 .post-title {
   line-height: 1.1;
   margin: 0;
 }
 
-.post-meta {
+.page-body .post-meta {
   color: var(--muted);
   font-size: 0.875rem;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.125rem 0;
   text-align: right;
+}
+
+.post-header {
+  padding-bottom: 0.25rem;
 }
 
 .post-list {
@@ -94,17 +122,32 @@ body {
 }
 
 .post-list-item {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.post-list-item + .post-list-item {
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+}
+
+.post-list-heading {
   align-items: baseline;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin: 0;
-  padding: 0.5rem 0;
 }
 
 .post-list-title {
   font-weight: 700;
   min-width: 0;
+}
+
+.post-list-description {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  margin: 0.15rem 0 0;
 }
 
 .post-list-date {
@@ -130,7 +173,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.25rem;
 }
 
-hr { margin: 2rem 0; }
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
 
 p { margin: 1rem 0; }
 
@@ -301,21 +348,35 @@ a {
 @media (max-width: 48rem) {
   .site-layout {
     display: block;
-    padding: 2rem 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    padding-top: 0.75rem;
   }
 
   .site-sidebar {
     background: var(--bg);
-    margin: 0 -1.25rem 1.5rem;
-    padding: 0 1.25rem 0.5rem;
+    margin: 0 -1.25rem 0.75rem;
+    padding: 0 1.25rem 0.25rem;
     position: sticky;
     top: 0;
     z-index: 3;
   }
 
+  .page-title,
+  .post-title {
+    font-size: 1.75rem;
+    padding-bottom: 0.25rem;
+  }
+
+  h2 { margin-top: 1.5rem; }
+  h3 { margin-top: 1.25rem; }
+  h4, h5, h6 { margin-top: 1rem; }
+  hr { margin: 1rem 0; }
+
   .post-header,
   .page-title {
-    top: 8.75rem;
+    top: 8.25rem;
   }
 
   .site-menu {
@@ -336,13 +397,9 @@ a {
   }
 }
 
-hr {
-  text-align: center;
-  border: 0;
-  border-top: 1px solid var(--border);
-
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
+hr::before,
+hr::after {
+  content: none;
 }
 
 table { width: 100%; }
@@ -354,16 +411,14 @@ table, th, td {
 }
 
 code {
-  color: #f2f7f4;
-  background: var(--text);
-  border-radius: 0.25rem;
+  color: var(--text);
+  font-family: monospace;
 }
 
 div.highlighter-rouge code {
   display: block;
   overflow-x: auto;
   white-space: pre-wrap;
-  padding: 1rem;
 }
 
 blockquote {

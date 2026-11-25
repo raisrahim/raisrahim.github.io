@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 550" width="100%" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Proactive Caching with the Outbox Pattern</title>
+  <desc id="diagram-desc">Architecture diagram showing client writes (create, update, delete) updating normalized tables and a resource-level outbox table in an RDBMS inside a single ACID transaction, a scheduled outbox poller acting as the single writer mirroring events to an in-memory read store, and a Read Service querying memory first with a rare read-only fallback to the RDBMS.</desc>
+
+  <defs>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .zone { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; fill: #64748b; text-anchor: middle; }
+      .box-title { font-size: 13px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
+      .box-sub { font-size: 10.5px; font-weight: 400; fill: #64748b; text-anchor: middle; }
+      .db-header { font-size: 12px; font-weight: 700; fill: #334155; text-anchor: middle; }
+      .valkey-title { font-size: 15px; font-weight: 700; fill: #14532d; text-anchor: middle; }
+      .valkey-sub { font-size: 11.5px; font-weight: 600; fill: #1f5c34; text-anchor: middle; }
+      .lbl-green { font-size: 11px; font-weight: 600; fill: #1f5c34; }
+      .lbl-slate { font-size: 11px; font-weight: 600; fill: #475569; }
+      .lbl-muted { font-size: 10px; font-weight: 400; fill: #64748b; }
+      .legend-txt { font-size: 11px; font-weight: 400; fill: #475569; }
+    </style>
+
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#1f5c34" />
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  
+  <rect width="840" height="550" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+  
+  <text x="221" y="26" class="font zone">WRITE PATH</text>
+  <text x="664" y="26" class="font zone">READ PATH</text>
+
+  
+  <rect x="121" y="40" width="200" height="44" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="221" y="58" class="font box-title">Client Writes</text>
+  <text x="221" y="74" class="font box-sub">Create · Update · Delete</text>
+
+  <rect x="564" y="40" width="200" height="44" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="664" y="58" class="font box-title">High-Traffic Clients</text>
+  <text x="664" y="74" class="font box-sub">Read Requests</text>
+
+  
+  <path d="M 221 84 V 119" fill="none" stroke="#1f5c34" stroke-width="1.75" marker-end="url(#arrow-green)" />
+  <path d="M 664 84 V 119" fill="none" stroke="#1f5c34" stroke-width="1.75" marker-end="url(#arrow-green)" />
+
+  
+  <rect x="121" y="122" width="200" height="46" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="221" y="150" class="font box-title">Write Service</text>
+
+  <rect x="564" y="122" width="200" height="46" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="664" y="150" class="font box-title">Read Service</text>
+
+  
+  <rect x="36" y="224" width="370" height="132" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="221" y="246" class="font db-header">RDBMS (Source of Truth)</text>
+
+  
+  <rect x="50" y="264" width="168" height="74" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="134" y="294" class="font box-title">outbox_events</text>
+  <text x="134" y="314" class="font lbl-muted" text-anchor="middle">resource_type · PENDING</text>
+
+  
+  <rect x="234" y="264" width="158" height="74" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="313" y="294" class="font box-title">Main Tables</text>
+  <text x="313" y="314" class="font box-sub">Normalized Entities</text>
+
+  
+  <path d="M 221 168 V 206" fill="none" stroke="#1f5c34" stroke-width="1.75" />
+  <path d="M 221 206 H 108 Q 104 206 104 210 V 261" fill="none" stroke="#1f5c34" stroke-width="1.75" marker-end="url(#arrow-green)" />
+  <path d="M 221 206 H 334 Q 338 206 338 210 V 261" fill="none" stroke="#1f5c34" stroke-width="1.75" marker-end="url(#arrow-green)" />
+  <rect x="166" y="179" width="110" height="20" rx="4" fill="#ffffff" />
+  <text x="221" y="193" class="font lbl-green" text-anchor="middle">Single ACID Tx</text>
+
+  
+  <rect x="564" y="248" width="200" height="86" rx="8" fill="#f0f7f2" stroke="#1f5c34" stroke-width="2" />
+  <text x="664" y="280" class="font valkey-title">Valkey / Redis</text>
+  <text x="664" y="300" class="font valkey-sub">In-Memory Read Store</text>
+  <text x="664" y="318" class="font box-sub">Hot start · Sub-ms lookups</text>
+
+  
+  <path d="M 664 168 V 244" fill="none" stroke="#1f5c34" stroke-width="2" marker-end="url(#arrow-green)" />
+  <text x="676" y="202" class="font lbl-green" text-anchor="start">1. Primary read</text>
+  <text x="676" y="218" class="font lbl-muted" text-anchor="start">(~100% hit rate)</text>
+
+  
+  <path d="M 564 145 H 493 Q 485 145 485 153 V 293 Q 485 301 477 301 H 395" fill="none" stroke="#64748b" stroke-width="1.75" stroke-dasharray="5,4" marker-end="url(#arrow-slate)" />
+  <rect x="414" y="191" width="142" height="38" rx="4" fill="#ffffff" />
+  <text x="485" y="207" class="font lbl-slate" text-anchor="middle">2. Rare fallback</text>
+  <text x="485" y="222" class="font lbl-muted" text-anchor="middle">(read-only · miss/down)</text>
+
+  
+  <rect x="44" y="418" width="236" height="58" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="162" y="443" class="font box-title">Scheduled Outbox Poller</text>
+  <text x="162" y="462" class="font box-sub">Batch per resource · Backoff &amp; retry</text>
+
+  
+  <path d="M 102 338 V 414" fill="none" stroke="#1f5c34" stroke-width="1.75" marker-end="url(#arrow-green)" />
+  <text x="93" y="380" class="font lbl-green" text-anchor="end">Poll batch</text>
+  <text x="93" y="394" class="font lbl-muted" text-anchor="end">PENDING</text>
+
+  <path d="M 178 418 V 342" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow-slate)" />
+  <text x="187" y="380" class="font lbl-slate" text-anchor="start">Mark PROCESSED</text>
+  <text x="187" y="394" class="font lbl-muted" text-anchor="start">or backoff / FAILED</text>
+
+  
+  <path d="M 280 447 H 656 Q 664 447 664 439 V 338" fill="none" stroke="#1f5c34" stroke-width="2" marker-end="url(#arrow-green)" />
+  <text x="472" y="437" class="font lbl-green" text-anchor="middle">UPSERT / DELETE (Idempotent)</text>
+  <text x="472" y="464" class="font lbl-muted" text-anchor="middle">Single writer to read store</text>
+
+  
+  <line x1="36" y1="502" x2="804" y2="502" stroke="#e2e8f0" stroke-width="1" />
+
+  <line x1="88" y1="525" x2="122" y2="525" stroke="#1f5c34" stroke-width="2" marker-end="url(#arrow-green)" />
+  <text x="132" y="529" class="font legend-txt">Normal flow (ACID write, primary read, async sync)</text>
+
+  <line x1="444" y1="525" x2="478" y2="525" stroke="#64748b" stroke-width="1.75" stroke-dasharray="5,4" marker-end="url(#arrow-slate)" />
+  <text x="488" y="529" class="font legend-txt">Safety &amp; control path (status update, read-only fallback)</text>
+</svg>

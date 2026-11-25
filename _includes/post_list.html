@@ -14,12 +14,17 @@
   <ul class="post-list">
     {%- for post in posts limit: include.limit -%}
         <li class="post-list-item">
-          {% if site.theme_config.lowercase_titles == true %}
-          <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-          {% else %}
-          <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% endif %}
-          <span class="post-list-date">{{- post.date | date: site.theme_config.date_format -}}</span>
+          <div class="post-list-heading">
+            {% if site.theme_config.lowercase_titles == true %}
+            <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+            {% else %}
+            <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% endif %}
+            <span class="post-list-date">{{- post.date | date: site.theme_config.date_format -}}</span>
+          </div>
+          {%- if posts.size < 8 and post.description -%}
+          <p class="post-list-description">{{ post.description }}</p>
+          {%- endif -%}
         </li>
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}
